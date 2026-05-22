@@ -149,7 +149,7 @@ public class StudentGradeTracker {
         Student newStudent = new Student(name, marks);
         studentList.add(newStudent);
 
-        System.out.println("  ✔  Student \"" + name + "\" added successfully!");
+        System.out.println("    Student \"" + name + "\" added successfully!");
         System.out.println("  ────────────────────────────────────");
     }
 
@@ -264,7 +264,7 @@ public class StudentGradeTracker {
         System.out.println("  ================================");
         System.out.printf("  %-22s  %s%n","Student Name", "Marks");
         System.out.println("  ================================");
-        
+
 
         for (Student s : studentList) {
             System.out.printf("  %-22s  %.2f%n",
