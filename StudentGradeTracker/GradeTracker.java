@@ -1,4 +1,5 @@
 package StudentGradeTracker;
+
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
@@ -10,16 +11,16 @@ public class GradeTracker {
         System.out.println("   ┌────────────────────────────────┐");
         System.out.println("   │     STUDENT GRADE TRACKER      │");
         System.out.println("   └────────────────────────────────┘");
-        int select=0;
-        int choice=0;
-        String name="";
+        int select = 0;
+        int choice = 0;
+        String name = "";
         do {
             do {
-               us.displayOption();
+                us.displayOption();
                 boolean validChoice = false;
 
                 while (!validChoice) {
-                System.out.print("Select the Option (1-4) :- ");
+                    System.out.print("Select the Option (1-4) :- ");
 
                     try {
                         choice = kb.nextInt();
@@ -33,8 +34,7 @@ public class GradeTracker {
                     }
                 }
 
-
-//                System.out.println();
+                // System.out.println();
                 switch (choice) {
                     case 1:
                         System.out.println("    ┌─────────────────────────────┐");
@@ -51,16 +51,13 @@ public class GradeTracker {
 
                                 rollno = kb.nextInt();
                                 kb.nextLine();
-                                if(us.isRollNoExists(rollno)){
+                                if (us.isRollNoExists(rollno)) {
 
                                     System.out.println("[!] Roll Number already exists.");
-                                }
-                                else{
+                                } else {
 
                                     validRollno = true;
                                 }
-
-
 
                             } catch (InputMismatchException e) {
 
@@ -69,16 +66,15 @@ public class GradeTracker {
                             }
                         }
 
-                        boolean validName=false;
-                        while(!validName) {
+                        boolean validName = false;
+                        while (!validName) {
                             System.out.print("Enter Name    :- ");
                             name = kb.nextLine();
-                            if(name.matches("[a-zA-Z]+")){
+                            if (name.matches("[a-zA-Z]+")) {
 
-
-                                validName=true;
-                            }
-                            else System.out.println("[!] Invalid input.");
+                                validName = true;
+                            } else
+                                System.out.println("[!] Invalid input.");
                         }
 
                         double grade = 0;
@@ -111,7 +107,6 @@ public class GradeTracker {
 
                         us.addStudent(rollno, name, grade);
 
-
                         break;
 
                     case 2:
@@ -119,7 +114,7 @@ public class GradeTracker {
                         break;
                     case 3:
 
-                      us.viewReport();
+                        us.viewReport();
 
                         break;
 
@@ -127,18 +122,15 @@ public class GradeTracker {
                         System.out.println("\nThank you for using Student Grade Tracker.");
                         break;
                     default:
-                       us.invalidOption();
+                        us.invalidOption();
 
                 }
 
-
             } while (choice != 4);
-        }while (select==4);
+        } while (select == 4);
 
-kb.close();
-
-    }
-
+        kb.close();
 
     }
 
+}
