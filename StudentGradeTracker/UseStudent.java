@@ -5,7 +5,7 @@ import java.util.ArrayList;
 public class UseStudent {
     ArrayList<Student> student = new ArrayList<>();
 
-    public void displayOption() {
+    public void showOption() {
         System.out.println("    ┌─────────────────────────────┐");
         System.out.println("    │          MAIN MENU          │");
         System.out.println("    ├─────────────────────────────┤");

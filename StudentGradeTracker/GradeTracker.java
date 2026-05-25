@@ -16,7 +16,7 @@ public class GradeTracker {
         String name = "";
         do {
             do {
-                us.displayOption();
+                us.showOption();
                 boolean validChoice = false;
 
                 while (!validChoice) {
