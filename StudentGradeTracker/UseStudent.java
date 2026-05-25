@@ -14,7 +14,6 @@ public class UseStudent {
         System.out.println("    │  3. Show Report             │");
         System.out.println("    │  4. Exit                    │");
         System.out.println("    └─────────────────────────────┘");
-//        System.out.println();
     }
 
     public boolean isRollNoExists(int rollno) {
