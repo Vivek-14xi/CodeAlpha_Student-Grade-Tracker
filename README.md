@@ -85,14 +85,8 @@ java StudentGradeTracker.GradeTracker
 
 Menu Preview
 
-┌─────────────────────────────┐
-│          MAIN MENU          │
-├─────────────────────────────┤
-│  1. Add Student Data        │
-│  2. View Students           │
-│  3. Show Report             │
-│  4. Exit                    │
-└─────────────────────────────┘
+
+<img width="497" height="432" alt="Screenshot 2026-05-27 182100" src="https://github.com/user-attachments/assets/62dd1ab9-05f3-4672-9893-66f2be251bd1" />
 
 
 ---
